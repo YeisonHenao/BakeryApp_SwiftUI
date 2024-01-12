@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0814E7892B5181F600E0E780 /* ImageCollageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0814E7882B5181F600E0E780 /* ImageCollageComponent.swift */; };
+		0814E78E2B5188C700E0E780 /* ColorsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0814E78D2B5188C700E0E780 /* ColorsUtils.swift */; };
 		08B1943A2B5047F200A5B924 /* BakeryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B194392B5047F200A5B924 /* BakeryAppApp.swift */; };
-		08B1943C2B5047F200A5B924 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B1943B2B5047F200A5B924 /* ContentView.swift */; };
 		08B1943E2B5047F300A5B924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B1943D2B5047F300A5B924 /* Assets.xcassets */; };
 		08B194412B5047F300A5B924 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B194402B5047F300A5B924 /* Preview Assets.xcassets */; };
+		08B1944A2B50481500A5B924 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B194492B50481500A5B924 /* InitialView.swift */; };
+		08B1944C2B50481F00A5B924 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B1944B2B50481F00A5B924 /* HomeView.swift */; };
+		08B1944F2B5049B000A5B924 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B1944E2B5049B000A5B924 /* HeaderComponent.swift */; };
+		08B194522B504C8000A5B924 /* InitialViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B194512B504C8000A5B924 /* InitialViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0814E7882B5181F600E0E780 /* ImageCollageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollageComponent.swift; sourceTree = "<group>"; };
+		0814E78D2B5188C700E0E780 /* ColorsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsUtils.swift; sourceTree = "<group>"; };
 		08B194362B5047F200A5B924 /* BakeryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakeryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B194392B5047F200A5B924 /* BakeryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryAppApp.swift; sourceTree = "<group>"; };
-		08B1943B2B5047F200A5B924 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		08B1943D2B5047F300A5B924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08B194402B5047F300A5B924 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08B194492B50481500A5B924 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		08B1944B2B50481F00A5B924 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		08B1944E2B5049B000A5B924 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
+		08B194512B504C8000A5B924 /* InitialViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0814E78A2B51889B00E0E780 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0814E78D2B5188C700E0E780 /* ColorsUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		08B1942D2B5047F200A5B924 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +69,12 @@
 		08B194382B5047F200A5B924 /* BakeryApp */ = {
 			isa = PBXGroup;
 			children = (
+				0814E78A2B51889B00E0E780 /* Utilities */,
+				08B194502B504C6900A5B924 /* ViewModel */,
+				08B1944D2B50499F00A5B924 /* Components */,
+				08B194482B50480000A5B924 /* Models */,
+				08B194472B5047FA00A5B924 /* Views */,
 				08B194392B5047F200A5B924 /* BakeryAppApp.swift */,
-				08B1943B2B5047F200A5B924 /* ContentView.swift */,
 				08B1943D2B5047F300A5B924 /* Assets.xcassets */,
 				08B1943F2B5047F300A5B924 /* Preview Content */,
 			);
@@ -65,6 +87,39 @@
 				08B194402B5047F300A5B924 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		08B194472B5047FA00A5B924 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08B194492B50481500A5B924 /* InitialView.swift */,
+				08B1944B2B50481F00A5B924 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		08B194482B50480000A5B924 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		08B1944D2B50499F00A5B924 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				08B1944E2B5049B000A5B924 /* HeaderComponent.swift */,
+				0814E7882B5181F600E0E780 /* ImageCollageComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		08B194502B504C6900A5B924 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				08B194512B504C8000A5B924 /* InitialViewViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08B1943C2B5047F200A5B924 /* ContentView.swift in Sources */,
+				08B1944A2B50481500A5B924 /* InitialView.swift in Sources */,
+				08B1944F2B5049B000A5B924 /* HeaderComponent.swift in Sources */,
+				0814E78E2B5188C700E0E780 /* ColorsUtils.swift in Sources */,
+				08B1944C2B50481F00A5B924 /* HomeView.swift in Sources */,
+				0814E7892B5181F600E0E780 /* ImageCollageComponent.swift in Sources */,
+				08B194522B504C8000A5B924 /* InitialViewViewModel.swift in Sources */,
 				08B1943A2B5047F200A5B924 /* BakeryAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,8 +338,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +347,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.BakeryApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,8 +371,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +380,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.BakeryApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

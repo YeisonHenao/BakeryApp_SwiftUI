@@ -2,7 +2,7 @@
 //  BakeryAppApp.swift
 //  BakeryApp
 //
-//  Created by desarrollador3 on 11/01/24.
+//  Created by Yeison Henao on 11/01/24.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct BakeryAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            InitialView()
         }
     }
 }
