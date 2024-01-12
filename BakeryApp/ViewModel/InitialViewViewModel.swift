@@ -9,11 +9,14 @@ import Foundation
 
 class InitialViewViewModel: ObservableObject{
     
+    
     init(){
         
     }
     
     func goToHome(){
-        print("Hello world!")    }
+        print("Hello world!")
+        EntryViewViewModel().goToHome()
+    }
     
 }

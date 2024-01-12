@@ -20,8 +20,7 @@ struct InitialView: View {
                 .font(.system(size: 40))
                 .italic()
                 .offset(CGSize(width: 0.0, height: -80.0))
-                .shadow(radius: 10)
-                
+                .shadow(color: Color.black.opacity(0.6), radius: 5, x: 9, y: 9)
             
             Spacer()
 

@@ -11,7 +11,7 @@ import SwiftUI
 struct BakeryAppApp: App {
     var body: some Scene {
         WindowGroup {
-            InitialView()
+            EntryView()
         }
     }
 }
