@@ -12,6 +12,16 @@ struct InitialView: View {
     @StateObject var viewModel = InitialViewViewModel()
     
     var body: some View {
+        
+        if viewModel.isInHome{
+            HomeView()
+        }else{
+            initial
+        }
+    }
+    
+    @ViewBuilder
+    var initial: some View {
         VStack{
             HeaderComponent(title: "Bakery Shop 🍞", background: Color.fromHex("#9c634f"), titleColor: Color.fromHex("#eee1ba"))
             
@@ -30,7 +40,7 @@ struct InitialView: View {
             Spacer()
             
             VStack{
-                Button("Ingresar", action: viewModel.goToHome)
+                Button("Ingresar", action: viewModel.userGoToHome)
                     .foregroundColor(.white)
                     .padding(20)
                     .background(Color.fromHex("#c37960"))

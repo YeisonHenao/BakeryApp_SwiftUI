@@ -13,13 +13,13 @@ struct ImageCollageComponent: View {
         HStack{
             VStack{
              
-                Image("logo")
+                Image(.logo)
                     .resizable()
                     .frame(width: 120,height: 120)
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(8.0)
                     .blur(radius: 2.0)
-                Image("logo")
+                Image(.logo)
                     .resizable()
                     .frame(width: 120,height: 120)
                     .aspectRatio(contentMode: .fit)
@@ -27,12 +27,12 @@ struct ImageCollageComponent: View {
             }
             .offset(CGSize(width: 0, height: 60.0))
             VStack{
-                Image("logo")
+                Image(.logo)
                     .resizable()
                     .frame(width: 120,height: 120)
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(8.0)
-                Image("logo")
+                Image(.logo)
                     .resizable()
                     .frame(width: 120,height: 120)
                     .aspectRatio(contentMode: .fit)
@@ -40,13 +40,13 @@ struct ImageCollageComponent: View {
                     .blur(radius: 2.0)
             }
             VStack{
-                Image("logo")
+                Image(.logo)
                     .resizable()
                     .frame(width: 120,height: 120)
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(8.0)
                     .blur(radius: 2.0)
-                Image("logo")
+                Image(.logo)
                     .resizable()
                     .frame(width: 120,height: 120)
                     .aspectRatio(contentMode: .fit)

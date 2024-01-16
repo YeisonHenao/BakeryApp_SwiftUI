@@ -9,14 +9,19 @@ import Foundation
 
 class InitialViewViewModel: ObservableObject{
     
+    @Published var isHome: Bool = false
+    
     
     init(){
         
     }
     
-    func goToHome(){
-        print("Hello world!")
-        EntryViewViewModel().goToHome()
+    public func userGoToHome(){
+        self.isHome.toggle()
+    }
+    
+    public var isInHome: Bool {
+        return isHome
     }
     
 }
