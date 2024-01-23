@@ -7,13 +7,17 @@
 
 import SwiftUI
 
+
+/// Vista inicial de la aplicación en la cual se espera que el usuario ingrese a la vista Home
 struct InitialView: View {
     
+    /// Instancia del viewModel
     @StateObject var viewModel = InitialViewViewModel()
     
+    /// El body de la vista a mostrar al usuario
     var body: some View {
         
-        if viewModel.isInHome{
+        if (viewModel.isInHome){
             HomeView()
         }else{
             initial
@@ -21,6 +25,7 @@ struct InitialView: View {
     }
     
     @ViewBuilder
+    /// <#Description#>
     var initial: some View {
         VStack{
             HeaderComponent(title: "Bakery Shop 🍞", background: Color.fromHex("#9c634f"), titleColor: Color.fromHex("#eee1ba"))
