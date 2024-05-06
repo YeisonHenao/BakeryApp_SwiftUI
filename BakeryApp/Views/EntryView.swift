@@ -15,7 +15,7 @@ struct EntryView: View {
     var body: some View {
         
         if(viewModel.showNextView){
-            HomeView()
+            HomeView(viewModel: HomeViewModel())
         }else{
             InitialView()
         }

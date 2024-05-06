@@ -18,19 +18,18 @@ struct InitialView: View {
     var body: some View {
         
         if (viewModel.isInHome){
-            HomeView()
+            HomeView(viewModel: HomeViewModel())
         }else{
             initial
         }
     }
     
     @ViewBuilder
-    /// <#Description#>
     var initial: some View {
         VStack{
-            HeaderComponent(title: "Bakery Shop 🍞", background: Color.fromHex("#9c634f"), titleColor: Color.fromHex("#eee1ba"))
+            HeaderComponent(title: Strings.titleApp, background: Color.fromHex("#9c634f"), titleColor: Color.fromHex("#eee1ba"))
             
-            Text("A delicius taste")
+            Text(Strings.descriptionLabel)
                 .foregroundColor(.white)
                 .font(.system(size: 40))
                 .italic()
@@ -45,7 +44,7 @@ struct InitialView: View {
             Spacer()
             
             VStack{
-                Button("Ingresar", action: viewModel.userGoToHome)
+                Button(Strings.enter, action: viewModel.userGoToHome)
                     .foregroundColor(.white)
                     .padding(20)
                     .background(Color.fromHex("#c37960"))

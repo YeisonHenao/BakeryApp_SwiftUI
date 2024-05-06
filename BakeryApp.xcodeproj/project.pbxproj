@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0814E7892B5181F600E0E780 /* ImageCollageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0814E7882B5181F600E0E780 /* ImageCollageComponent.swift */; };
 		0814E78E2B5188C700E0E780 /* ColorsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0814E78D2B5188C700E0E780 /* ColorsUtils.swift */; };
+		081711D92BE66EAC00383E9D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081711D82BE66EAC00383E9D /* Strings.swift */; };
+		081711DD2BE6852700383E9D /* InitialViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081711DC2BE6852700383E9D /* InitialViewModelProtocol.swift */; };
+		081711DF2BE68B4E00383E9D /* EntryViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081711DE2BE68B4E00383E9D /* EntryViewModelProtocol.swift */; };
+		081711E22BE690EE00383E9D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081711E12BE690EE00383E9D /* HomeViewModel.swift */; };
+		081711E42BE690FA00383E9D /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081711E32BE690FA00383E9D /* HomeViewModelProtocol.swift */; };
+		081711E62BE6959000383E9D /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081711E52BE6959000383E9D /* ProductModel.swift */; };
 		08B1943A2B5047F200A5B924 /* BakeryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B194392B5047F200A5B924 /* BakeryAppApp.swift */; };
 		08B1943E2B5047F300A5B924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B1943D2B5047F300A5B924 /* Assets.xcassets */; };
 		08B194412B5047F300A5B924 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B194402B5047F300A5B924 /* Preview Assets.xcassets */; };
@@ -23,6 +29,12 @@
 /* Begin PBXFileReference section */
 		0814E7882B5181F600E0E780 /* ImageCollageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollageComponent.swift; sourceTree = "<group>"; };
 		0814E78D2B5188C700E0E780 /* ColorsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsUtils.swift; sourceTree = "<group>"; };
+		081711D82BE66EAC00383E9D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		081711DC2BE6852700383E9D /* InitialViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewModelProtocol.swift; sourceTree = "<group>"; };
+		081711DE2BE68B4E00383E9D /* EntryViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewModelProtocol.swift; sourceTree = "<group>"; };
+		081711E12BE690EE00383E9D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		081711E32BE690FA00383E9D /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
+		081711E52BE6959000383E9D /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductModel.swift; path = BakeryApp/ViewModel/HomeViewModel/ProductModel.swift; sourceTree = SOURCE_ROOT; };
 		08B194362B5047F200A5B924 /* BakeryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakeryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B194392B5047F200A5B924 /* BakeryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryAppApp.swift; sourceTree = "<group>"; };
 		08B1943D2B5047F300A5B924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +66,41 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		081711D72BE66E9B00383E9D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				081711D82BE66EAC00383E9D /* Strings.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		081711DA2BE684EA00383E9D /* InitialViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				08B194512B504C8000A5B924 /* InitialViewViewModel.swift */,
+				081711DC2BE6852700383E9D /* InitialViewModelProtocol.swift */,
+			);
+			path = InitialViewModel;
+			sourceTree = "<group>";
+		};
+		081711DB2BE684FB00383E9D /* EntryViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				08B39C042B51C6510066168F /* EntryViewViewModel.swift */,
+				081711DE2BE68B4E00383E9D /* EntryViewModelProtocol.swift */,
+			);
+			path = EntryViewModel;
+			sourceTree = "<group>";
+		};
+		081711E02BE690D000383E9D /* HomeViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				081711E12BE690EE00383E9D /* HomeViewModel.swift */,
+				081711E32BE690FA00383E9D /* HomeViewModelProtocol.swift */,
+			);
+			path = HomeViewModel;
+			sourceTree = "<group>";
+		};
 		08B1942D2B5047F200A5B924 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +120,7 @@
 		08B194382B5047F200A5B924 /* BakeryApp */ = {
 			isa = PBXGroup;
 			children = (
+				081711D72BE66E9B00383E9D /* Resources */,
 				0814E78A2B51889B00E0E780 /* Utilities */,
 				08B194502B504C6900A5B924 /* ViewModel */,
 				08B1944D2B50499F00A5B924 /* Components */,
@@ -106,6 +154,7 @@
 		08B194482B50480000A5B924 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				081711E52BE6959000383E9D /* ProductModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,8 +171,9 @@
 		08B194502B504C6900A5B924 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				08B194512B504C8000A5B924 /* InitialViewViewModel.swift */,
-				08B39C042B51C6510066168F /* EntryViewViewModel.swift */,
+				081711E02BE690D000383E9D /* HomeViewModel */,
+				081711DB2BE684FB00383E9D /* EntryViewModel */,
+				081711DA2BE684EA00383E9D /* InitialViewModel */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -200,13 +250,19 @@
 			files = (
 				08B1944A2B50481500A5B924 /* InitialView.swift in Sources */,
 				08B1944F2B5049B000A5B924 /* HeaderComponent.swift in Sources */,
+				081711E62BE6959000383E9D /* ProductModel.swift in Sources */,
+				081711D92BE66EAC00383E9D /* Strings.swift in Sources */,
+				081711E42BE690FA00383E9D /* HomeViewModelProtocol.swift in Sources */,
 				0814E78E2B5188C700E0E780 /* ColorsUtils.swift in Sources */,
+				081711DD2BE6852700383E9D /* InitialViewModelProtocol.swift in Sources */,
 				08B1944C2B50481F00A5B924 /* HomeView.swift in Sources */,
 				0814E7892B5181F600E0E780 /* ImageCollageComponent.swift in Sources */,
 				08B39C052B51C6510066168F /* EntryViewViewModel.swift in Sources */,
+				081711E22BE690EE00383E9D /* HomeViewModel.swift in Sources */,
 				08B194522B504C8000A5B924 /* InitialViewViewModel.swift in Sources */,
 				08B1943A2B5047F200A5B924 /* BakeryAppApp.swift in Sources */,
 				08B39C032B51C52F0066168F /* EntryView.swift in Sources */,
+				081711DF2BE68B4E00383E9D /* EntryViewModelProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

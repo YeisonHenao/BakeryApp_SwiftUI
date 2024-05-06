@@ -7,7 +7,7 @@
 
 import Foundation
 
-class EntryViewViewModel: ObservableObject {
+class EntryViewViewModel: ObservableObject ,EntryViewModelProtocol {
     
     @Published var showNextView: Bool = false
     
@@ -16,7 +16,6 @@ class EntryViewViewModel: ObservableObject {
     }
     
     public func goToHome(){
-        print("Press change route")
         self.showNextView.toggle()
     }
     

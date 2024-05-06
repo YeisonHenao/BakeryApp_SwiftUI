@@ -7,7 +7,7 @@
 
 import Foundation
 
-class InitialViewViewModel: ObservableObject{
+class InitialViewViewModel: ObservableObject ,InitialViewModelProtocol {
     
     @Published var isHome: Bool = false
     
