@@ -8,10 +8,12 @@
 import Foundation
 
 class HomeViewModel: ObservableObject, HomeViewModelProtocol {
+    @Published var show_InputSearch: Bool = false
     @Published var search_text: String = ""
     @Published var products : [ProductModel] = []
     
     
+        /// Función para añadir los productos a la vista
     func createInfo(){
         let product1 = ProductModel(id: 1, image: "cake", title: "Pastel de cereza", description: "Delicioso pastel de cereza", price: 10.99)
         let product2 = ProductModel(id: 2, image: "buñuelos", title: "Buñuelos", description: "Deliciosos buñuelos", price: 7.6)
@@ -22,6 +24,10 @@ class HomeViewModel: ObservableObject, HomeViewModelProtocol {
         products.append(product2)
         products.append(product3)
         products.append(product4)
+    }
+    
+    func showSearch(){
+        self.show_InputSearch.toggle()
     }
     
     func sayHi(){

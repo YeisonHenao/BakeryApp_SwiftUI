@@ -30,12 +30,26 @@ struct HomeView: View {
                     .padding(10)
                     .background(Color.fromHex("#c37960"))
                     .cornerRadius(4)
-                Button(Strings.placeholder_button_search, action: viewModel.sayHi)
+                Button(Strings.placeholder_button_search, action: viewModel.showSearch)
                     .foregroundColor(.white)
                     .padding(10)
                     .background(Color.fromHex("#c37960"))
                     .cornerRadius(4)
             }.padding(.top, -60)
+            
+            if viewModel.show_InputSearch {
+                HStack{
+                    TextField(Strings.placeholder_search, text: $viewModel.search_text)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                        .autocapitalization(.none)
+                        .autocorrectionDisabled()
+                        .padding()
+                    Image(systemName: "magnifyingglass.circle")
+                        .imageScale(.large)
+                        .padding(.trailing,10)
+                }
+                .padding(.bottom, 10)
+            }
             
             ScrollView {
                         VStack(alignment: .leading) {
