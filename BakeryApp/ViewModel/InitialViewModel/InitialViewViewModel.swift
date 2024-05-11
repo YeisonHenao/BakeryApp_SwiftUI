@@ -11,11 +11,6 @@ class InitialViewViewModel: ObservableObject ,InitialViewModelProtocol {
     
     @Published var isHome: Bool = false
     
-    
-    init(){
-        
-    }
-    
     public func userGoToHome(){
         self.isHome.toggle()
     }

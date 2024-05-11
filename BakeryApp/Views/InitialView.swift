@@ -11,10 +11,8 @@ import SwiftUI
 /// Vista inicial de la aplicación en la cual se espera que el usuario ingrese a la vista Home
 struct InitialView: View {
     
-    /// Instancia del viewModel
     @StateObject var viewModel = InitialViewViewModel()
-    
-    /// El body de la vista a mostrar al usuario
+
     var body: some View {
         
         if (viewModel.isInHome){
@@ -27,7 +25,7 @@ struct InitialView: View {
     @ViewBuilder
     var initial: some View {
         VStack{
-            HeaderComponent(title: Strings.titleApp, background: Color.fromHex("#9c634f"), titleColor: Color.fromHex("#eee1ba"))
+            HeaderComponent(title: Strings.titleApp, background: Color.fromHex(Colors.HeaderbackgroundColor), titleColor: Color.fromHex(Colors.tintTitleColor))
             
             Text(Strings.descriptionLabel)
                 .foregroundColor(.white)
@@ -46,14 +44,14 @@ struct InitialView: View {
             VStack{
                 Button(Strings.enter, action: viewModel.userGoToHome)
                     .foregroundColor(.white)
-                    .padding(20)
-                    .background(Color.fromHex("#c37960"))
+                    .padding(15)
+                    .background(Color.fromHex(Colors.secondaryBackgroundColor))
                     .cornerRadius(4)
             }
             .padding(50)
             
         }
-        .background(Color.fromHex("#f0d7a7"))
+        .background(Color.fromHex(Colors.backgroundColorApplication))
     }
 }
 

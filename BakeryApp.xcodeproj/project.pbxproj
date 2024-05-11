@@ -15,6 +15,9 @@
 		081711E22BE690EE00383E9D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081711E12BE690EE00383E9D /* HomeViewModel.swift */; };
 		081711E42BE690FA00383E9D /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081711E32BE690FA00383E9D /* HomeViewModelProtocol.swift */; };
 		081711E62BE6959000383E9D /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081711E52BE6959000383E9D /* ProductModel.swift */; };
+		0819853D2BEBC70700267992 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0819853C2BEBC70700267992 /* Colors.swift */; };
+		0819853F2BEBC94900267992 /* SystemNameImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0819853E2BEBC94900267992 /* SystemNameImage.swift */; };
+		081985422BEBF41500267992 /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081985412BEBF41500267992 /* ButtonComponent.swift */; };
 		08B1943A2B5047F200A5B924 /* BakeryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B194392B5047F200A5B924 /* BakeryAppApp.swift */; };
 		08B1943E2B5047F300A5B924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B1943D2B5047F300A5B924 /* Assets.xcassets */; };
 		08B194412B5047F300A5B924 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B194402B5047F300A5B924 /* Preview Assets.xcassets */; };
@@ -35,6 +38,9 @@
 		081711E12BE690EE00383E9D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		081711E32BE690FA00383E9D /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
 		081711E52BE6959000383E9D /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductModel.swift; path = BakeryApp/ViewModel/HomeViewModel/ProductModel.swift; sourceTree = SOURCE_ROOT; };
+		0819853C2BEBC70700267992 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0819853E2BEBC94900267992 /* SystemNameImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNameImage.swift; sourceTree = "<group>"; };
+		081985412BEBF41500267992 /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
 		08B194362B5047F200A5B924 /* BakeryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakeryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B194392B5047F200A5B924 /* BakeryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeryAppApp.swift; sourceTree = "<group>"; };
 		08B1943D2B5047F300A5B924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				081711D82BE66EAC00383E9D /* Strings.swift */,
+				0819853C2BEBC70700267992 /* Colors.swift */,
+				0819853E2BEBC94900267992 /* SystemNameImage.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -164,6 +172,7 @@
 			children = (
 				08B1944E2B5049B000A5B924 /* HeaderComponent.swift */,
 				0814E7882B5181F600E0E780 /* ImageCollageComponent.swift */,
+				081985412BEBF41500267992 /* ButtonComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -255,13 +264,16 @@
 				081711E42BE690FA00383E9D /* HomeViewModelProtocol.swift in Sources */,
 				0814E78E2B5188C700E0E780 /* ColorsUtils.swift in Sources */,
 				081711DD2BE6852700383E9D /* InitialViewModelProtocol.swift in Sources */,
+				081985422BEBF41500267992 /* ButtonComponent.swift in Sources */,
 				08B1944C2B50481F00A5B924 /* HomeView.swift in Sources */,
 				0814E7892B5181F600E0E780 /* ImageCollageComponent.swift in Sources */,
+				0819853D2BEBC70700267992 /* Colors.swift in Sources */,
 				08B39C052B51C6510066168F /* EntryViewViewModel.swift in Sources */,
 				081711E22BE690EE00383E9D /* HomeViewModel.swift in Sources */,
 				08B194522B504C8000A5B924 /* InitialViewViewModel.swift in Sources */,
 				08B1943A2B5047F200A5B924 /* BakeryAppApp.swift in Sources */,
 				08B39C032B51C52F0066168F /* EntryView.swift in Sources */,
+				0819853F2BEBC94900267992 /* SystemNameImage.swift in Sources */,
 				081711DF2BE68B4E00383E9D /* EntryViewModelProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

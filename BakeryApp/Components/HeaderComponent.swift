@@ -23,10 +23,10 @@ struct HeaderComponent: View {
                     .bold()
                     .font(.system(size: 35))
             }
-            .padding(.top,60)
+            .padding(.top,120)
         }
-        .frame(width: UIScreen.main.bounds.width, height: 220)
-        .offset(y: -80)
+        .frame(width: UIScreen.main.bounds.width, height: 280)
+        .offset(y: -120)
     }
 }
 

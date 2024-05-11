@@ -8,6 +8,8 @@
 import Foundation
 
 class HomeViewModel: ObservableObject, HomeViewModelProtocol {
+    @Published var cartProducts: [ProductModel] = []
+    @Published var showAlert: Bool = false
     @Published var show_InputSearch: Bool = false
     @Published var search_text: String = ""
     @Published var products : [ProductModel] = []
@@ -28,6 +30,21 @@ class HomeViewModel: ObservableObject, HomeViewModelProtocol {
     
     func showSearch(){
         self.show_InputSearch.toggle()
+    }
+    
+    func validateCart() -> Bool{
+        if cartProducts.count > 0 {
+            return true
+        }
+        return false
+    }
+    
+    func goToCartDetail(){
+        let validate = self.validateCart()
+        if(validate){
+            print("go to cartView")
+        }
+        showAlert.toggle()
     }
     
     func sayHi(){

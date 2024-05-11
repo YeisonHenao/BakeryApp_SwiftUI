@@ -18,38 +18,27 @@ struct HomeView: View {
     
     var body: some View {
         VStack{
-            HeaderComponent(title: Strings.titleApp, background: Color.fromHex("#9c634f"), titleColor: Color.fromHex("#eee1ba"))
+            HeaderComponent(title: Strings.titleApp, background: Color.fromHex(Colors.HeaderbackgroundColor), titleColor: Color.fromHex(Colors.tintTitleColor))
             
             HStack{
                 Button {
-                    viewModel.sayHi()
+                    viewModel.goToCartDetail()
                 } label: {
-                    Image(systemName: "cart")
+                    Image(systemName: SystemNameImage.cart)
                 }
                     .foregroundColor(.white)
                     .padding(10)
-                    .background(Color.fromHex("#c37960"))
+                    .background(Color.fromHex(Colors.secondaryBackgroundColor))
                     .cornerRadius(4)
+                    .alert(isPresented: $viewModel.showAlert, content: {
+                        Alert(title: Text("Alerta").font(.title), message: Text("No tienes productos agregados al carrito"),dismissButton: .default(Text("OK")) )
+                    })
                 Button(Strings.placeholder_button_search, action: viewModel.showSearch)
                     .foregroundColor(.white)
                     .padding(10)
-                    .background(Color.fromHex("#c37960"))
+                    .background(Color.fromHex(Colors.secondaryBackgroundColor))
                     .cornerRadius(4)
-            }.padding(.top, -60)
-            
-            if viewModel.show_InputSearch {
-                HStack{
-                    TextField(Strings.placeholder_search, text: $viewModel.search_text)
-                        .textFieldStyle(DefaultTextFieldStyle())
-                        .autocapitalization(.none)
-                        .autocorrectionDisabled()
-                        .padding()
-                    Image(systemName: "magnifyingglass.circle")
-                        .imageScale(.large)
-                        .padding(.trailing,10)
-                }
-                .padding(.bottom, 10)
-            }
+            }.padding(.top, -110)
             
             ScrollView {
                         VStack(alignment: .leading) {
@@ -66,10 +55,10 @@ struct HomeView: View {
                                 }
                             }
                         }
-                        .padding()
                     }
-            .padding(.top,-20)
+            .padding(.top, -50)
                 }
+        .background(Color.fromHex(Colors.backgroundColorApplication))
         }
     
     struct ProductView: View {
@@ -81,21 +70,18 @@ struct HomeView: View {
                                 Image(imageName)
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(maxHeight: 100)
+                                    .frame(width: 150, height: 150)
                                     .cornerRadius(10)
                             }
                 Text(product.title)
-                    .font(.title)
                 Text(product.description)
-                    .font(.body)
                     .foregroundColor(.secondary)
                 Text("$\(product.price, specifier: "%.2f")")
                     .font(.headline)
                     .foregroundColor(.blue)
             }
-            .padding()
             .frame(maxWidth: .infinity)
-            .background(Color.gray.opacity(0.1))
+            .border(Color.fromHex(Colors.secondaryBackgroundColor))
             .cornerRadius(10)
             .padding(.horizontal, 4)
         }
